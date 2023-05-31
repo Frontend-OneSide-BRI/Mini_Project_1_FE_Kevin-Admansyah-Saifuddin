@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>KImage Host</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- CSS-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+       
+    </head>
+    <body>
+        <!-- Navigasi-->
+        <nav class="navbar fixed-top  navbar-expand-lg bg-light navbar-transparent navbar-custom">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logonav.png" alt="Logo" width="90" height="65">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link custom-menu" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Gallery</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle custom-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tentang Kami
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">What We Do</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Contact</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              
+                  <button type="button" class="btn btn-outline-secondary btn-md ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Login</button>
+                </form>
+              </div>
+            </div>
+          </nav>     
+  
+           <!-- Judul-->
+           <section class="call-to-action text-white text-center" id="signup">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <h2 class="mb-4">Gallery</h2>    
+                        <form class="d-flex search2" role="search">
+                          <input id="searchInput" class="form-control w-100 text-center me-2" type="search" placeholder="Ketik Pencarian" aria-label="Search">
+                         </form>
+                          </div>
+                          
+                                    
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <!-- Menu Kategori -->
+        <ul class="landing-top-menu scroll-x--hidden">
+          <li class="landing-top-menu__item">
+            <a class="text-link--sly action--with-emphasis" href="#" onclick="filterImages('')">SEMUA</a>
+          </li>
+          <li class="landing-top-menu__item">
+            <a class="text-link--sly action--with-emphasis" href="#" onclick="filterImages('Nature')">NATURE</a>
+          </li>
+          <li class="landing-top-menu__item">
+            <a class="text-link--sly action--with-emphasis" href="#" onclick="filterImages('People')">PEOPLE</a>
+          </li>
+          <li class="landing-top-menu__item">
+            <a class="text-link--sly action--with-emphasis" href="#" onclick="filterImages('Weather')">WEATHER</a>
+          </li>
+        </ul>
+
+    <!-- Galeri -->
+    <section id="pagewrap">
+      <div class="gallery"></div>
+  </section>
+
+<!-- Footer -->
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item"><a href="#!">About</a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a href="#!">Contact</a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+                        </ul>
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; Kevin Admansyah 2023. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item me-4">
+                                <a href="#!"><i class="bi-facebook fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <a href="#!"><i class="bi-twitter fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!"><i class="bi-instagram fs-3"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- TEMPAT SCRIPT -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/gallery.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Modal Detail Image -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img src="" alt="Modal Image" class="modal-image" style="width: 100%; height: auto;">
+            <center>  <p class="modal-detail"></p> </center>
+          </div>
+      </div>
+  </div>
+</div>
+       
+<!-- Modal Body -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Form Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Email:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="col-form-label">Password:</label>
+              <input type="text" class="form-control" id="password">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </body>
+</html>
